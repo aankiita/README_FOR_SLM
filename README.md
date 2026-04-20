@@ -1,4 +1,4 @@
-#SubWord Tokenization
+# SubWord Tokenization
 ✅ Word Tokenization
 Splits sentence into full words.
 "I am playing cricket"
@@ -19,7 +19,7 @@ Word tokenizer → ❌ doesn't know this word
 So it marks it as(unknown)
 Meaning is lost 😞
 
-** Problem 2: Very Large Vocabulary
+* Problem 2: Very Large Vocabulary
 Every word must be stored separately
 Example:
 play
