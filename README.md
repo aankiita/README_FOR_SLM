@@ -11,7 +11,7 @@ Splits words into smaller meaningful parts
 
 ---
 # 2. Problems with Word Tokenization
-❌ Problem 1: Unknown Words (OOV – Out of Vocabulary)
+* Problem 1: Unknown Words (OOV – Out of Vocabulary)
 
 Imagine model sees a new word:
 "unhappiness"
@@ -20,17 +20,40 @@ So it marks it as(unknown)
 Meaning is lost 😞
 
 * Problem 2: Very Large Vocabulary
-Every word must be stored separately
+Every word must be stored separately(as every words have different ending but still save as unique vocabulary as all have different latter in it)
 Example:
 play
 playing
 played
 player
-
-👉 All stored as different words
-
 📌 Result:
-
 Huge memory required
 Slower model
+
+* Problem 3: No Understanding of Word Structure
+
+Word tokenizer treats:
+play ≠ playing ≠ played
+But actually they are related!
+
+
+# 3. How Subword Tokenization Solves These Problems
+**Models like BERT and GPT use subword tokenization.**
+* Advantage 1: Handles Unknown Words
+unhappiness → un + happy + ness
+
+Even if full word is new:
+"happy" is known
+"un" = not
+"ness" = state
+👉 Model understands meaning correctly
+
+* Advantage 2: Smaller Vocabulary
+Instead of storing:
+play, playing, played, player
+Store:
+*play + ing + ed + er*
+
+
+
 
