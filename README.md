@@ -40,12 +40,12 @@ But actually they are related!
 # 3. How Subword Tokenization Solves These Problems
 **Models like BERT and GPT use subword tokenization.**
 * Advantage 1: Handles Unknown Words
-unhappiness → un + happy + ness
+> unhappiness → un + happy + ness
 
 Even if full word is new:
-"happy" is known
-"un" = not
-"ness" = state
+1. "happy" is known
+2. "un" = not
+3. "ness" = state
 👉 Model understands meaning correctly
 
 * Advantage 2: Smaller Vocabulary
