@@ -39,7 +39,7 @@ But actually they are related!
 
 # 3. How Subword Tokenization Solves These Problems
 **Models like BERT and GPT use subword tokenization.**
-1. Advantage 1: Handles Unknown Words
+* Advantage 1: Handles Unknown Words
 > unhappiness → un + happy + ness
 
 Even if full word is new:
@@ -48,7 +48,7 @@ Even if full word is new:
 3. "ness" = state
 👉 Model understands meaning correctly
 
-2. Advantage 2: Smaller Vocabulary
+* Advantage 2: Smaller Vocabulary
 Instead of storing:
 __play, playing, played, player__
 Store:
